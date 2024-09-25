@@ -1,0 +1,25 @@
+{
+  "name": "@acme/calendar-react",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "clean": "rimraf dist *.tsbuildinfo .rollup.cache",
+    "build": "rollup --config rollup.config.mjs",
+    "typecheck": "tsc --emitDeclarationOnly"
+  },
+  "exports": {
+    "types": "./dist/calendar.d.ts",
+    "import": "./dist/calendar.js"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.9",
+    "react": "18.3.1"
+  },
+  "peerDependencies": {
+    "react": "18"
+  },
+  "dependencies": {
+    "@acme/button-react": "workspace:*",
+    "clsx": "2.1.1"
+  }
+}

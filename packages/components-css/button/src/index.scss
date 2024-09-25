@@ -1,0 +1,25 @@
+.button {
+  --button-primary-color: white;
+  --button-primary-background-color: deeppink;
+
+  --button-secondary-color: deeppink;
+  --button-secondary-background-color: white;
+  --button-secondary-border-color: deeppink;
+
+  background-color: var(--button-background-color, transparent);
+  border: 1px solid var(--button-border-color, transparent);
+  border-radius: 0.25rem;
+  color: var(--button-color, indigo);
+  padding: 0.5rem 1rem;
+}
+
+.button--primary {
+  --button-color: var(--button-primary-color);
+  --button-background-color: var(--button-primary-background-color);
+}
+
+.button--secondary {
+  --button-color: var(--button-secondary-color);
+  --button-background-color: var(--button-secondary-background-color);
+  --button-border-color: var(--button-secondary-border-color);
+}

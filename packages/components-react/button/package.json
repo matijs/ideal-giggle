@@ -1,0 +1,24 @@
+{
+  "name": "@acme/button-react",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "clean": "rimraf dist *.tsbuildinfo .rollup.cache",
+    "build": "rollup --config rollup.config.mjs",
+    "typecheck": "tsc --emitDeclarationOnly"
+  },
+  "exports": {
+    "types": "./dist/button.d.ts",
+    "import": "./dist/button.js"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.9",
+    "react": "18.3.1"
+  },
+  "peerDependencies": {
+    "react": "18.3.1"
+  },
+  "dependencies": {
+    "clsx": "2.1.1"
+  }
+}

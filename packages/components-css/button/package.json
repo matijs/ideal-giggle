@@ -1,0 +1,8 @@
+{
+  "name": "@acme/button-css",
+  "version": "1.0.0",
+  "scripts": {
+    "clean": "rimraf dist .rollup.cache",
+    "build": "rollup --config rollup.config.mjs"
+  }
+}
