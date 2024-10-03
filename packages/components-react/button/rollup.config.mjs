@@ -12,6 +12,7 @@ export default {
     {
       dir: 'dist',
       format: 'es',
+      sourcemap: true,
     },
   ],
   plugins: [
@@ -20,7 +21,10 @@ export default {
     nodeExternals(),
     nodeResolve({ browser: true }),
     json(),
-    typescript({ outputToFilesystem: true }),
+    typescript({
+      outputToFilesystem: false,
+      tsconfig: 'tsconfig.build.json',
+    }),
     babel({
       presets: ['@babel/preset-react'],
       babelHelpers: 'runtime',

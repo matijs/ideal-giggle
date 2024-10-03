@@ -5,7 +5,7 @@
   "scripts": {
     "clean": "rimraf dist *.tsbuildinfo .rollup.cache",
     "build": "rollup --config rollup.config.mjs",
-    "typecheck": "tsc --emitDeclarationOnly"
+    "typecheck": "tsc"
   },
   "exports": {
     "types": "./dist/calendar.d.ts",
