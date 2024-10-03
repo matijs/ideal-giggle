@@ -1,9 +1,13 @@
 {
   "include": ["src/**/*"],
-  "exclude": ["node_modules", "**/*.test.ts", "**/*.test.tsx"],
+  "exclude": ["**/*.test.ts", "**/*.test.tsx"],
   "references": [
-    { "path": "../components-react/button/tsconfig.build.json" },
-    { "path": "../components-react/calendar/tsconfig.build.json" }
+    {
+      "path": "../components-react/button/tsconfig.build.json"
+    },
+    {
+      "path": "../components-react/calendar/tsconfig.build.json"
+    }
   ],
   "compilerOptions": {
     "declaration": true,

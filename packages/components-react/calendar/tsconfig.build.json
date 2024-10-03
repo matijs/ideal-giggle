@@ -1,8 +1,10 @@
 {
   "include": ["src/**/*"],
-  "exclude": ["node_modules", "**/*.test.ts", "**/*.test.tsx"],
+  "exclude": ["**/*.test.ts", "**/*.test.tsx"],
   "references": [
-    { "path": "../button/tsconfig.build.json" }
+    {
+      "path": "../button/tsconfig.build.json"
+    }
   ],
   "compilerOptions": {
     "composite": true,
